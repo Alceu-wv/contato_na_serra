@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Na Serra</title>
+
+    <!-- CSS do Bootstrap e Material Design para Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+
+    <!-- CSS personalizado para ajustar a altura da seção para tela cheia e remover rolagem -->
+    <style>
+        .full-height {
+            height: 100vh;
+            padding-top: 6rem; /* ajustado para compensar a barra de navegação */
+        }
+
+        .full-height-video {
+            max-width: 100%;
+            max-height: calc(100vh - 6rem);
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação superior fixa -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="background-color: #3f51b5;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Contato Na Serra</strong></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto smooth-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato-improvisacao">Contato Improvisação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aulas-regulares">Aulas Regulares</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seções da página -->
+    <div id="contato-improvisacao" class="full-height p-3">
+        <h2 class="text-center">O que é Contato Improvisação?</h2>
+        <p>Contato Improvisação é uma forma de dança que surgiu na década de 1970, tendo como um de seus principais precursores o coreógrafo e dançarino americano Steve Paxton. Essa prática artística explora a comunicação entre os corpos, utilizando o toque, o peso e a movimentação conjunta, de modo a promover a sensação de dançar através do tato e de estímulos sensoriais...</p>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <iframe class="full-height-video" src="https://www.youtube.com/embed/SEuOoMprDqg" allowfullscreen></iframe>
+        </div>
+    <div id="quem-somos" class="full-height p-3">
+            <h2 class="text-center">Sobre o Núcleo de Contato Improvisação Serra Gaúcha:</h2>
+            <p>Surgido em Caxias do Sul neste ano, é uma iniciativa inspiradora que busca difundir e fortalecer a prática de Contato Improvisação na região...</p>
+            <img class="img-fluid" src="seu-link-de-imagem.jpg" alt="Imagem de referência">
+        </div>
+    <div id="aulas-regulares" class="full-height">
+        <!-- Conteúdo da seção -->
+    </div>
+
+    <!-- jQuery e Bootstrap e Material Design para Bootstrap JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Rolagem suave para os links da navbar e links da lista de links
+            $(".navbar a, .list-group a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
