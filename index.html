@@ -1,84 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato Na Serra</title>
 
-    <!-- CSS do Bootstrap e Material Design para Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS personalizado para ajustar a altura da seção para tela cheia e remover rolagem -->
+    <title>Grupo Contato Na Serra</title>
+
     <style>
-        .full-height {
-            height: 100vh;
-            padding-top: 6rem; /* ajustado para compensar a barra de navegação */
+        .navbar {
+            background-color: rgba(84, 32, 11);
         }
+        body {
+          padding-top: 100px;
+          background-color: rgba(84, 32, 11, 0.2);
+        }
+      </style>
 
-        .full-height-video {
-            max-width: 100%;
-            max-height: calc(100vh - 6rem);
-        }
-    </style>
 </head>
 <body>
-    <!-- Barra de navegação superior fixa -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="background-color: #3f51b5;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>Contato Na Serra</strong></a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto smooth-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato-improvisacao">Contato Improvisação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quem-somos">Quem Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aulas-regulares">Aulas Regulares</a>
-                    </li>
-                </ul>
-            </div>
+            <img src="assets/logo.png" weight="100px" height="100px" style="border-radius: 50%;" alt="Logo" class="mr-3">
+            <a class="navbar-brand" href="#contato">Contato Improvisação</a>
+            <a class="navbar-brand" href="#quem-somos">Quem somos</a>
+            <a class="navbar-brand" href="#aulas-regulares">Aulas regulares</a>
         </div>
     </nav>
 
-    <!-- Seções da página -->
-    <div id="contato-improvisacao" class="full-height p-3">
-        <h2 class="text-center">O que é Contato Improvisação?</h2>
-        <p>Contato Improvisação é uma forma de dança que surgiu na década de 1970, tendo como um de seus principais precursores o coreógrafo e dançarino americano Steve Paxton. Essa prática artística explora a comunicação entre os corpos, utilizando o toque, o peso e a movimentação conjunta, de modo a promover a sensação de dançar através do tato e de estímulos sensoriais...</p>
-        <div class="d-flex justify-content-center align-items-center h-100">
-            <iframe class="full-height-video" src="https://www.youtube.com/embed/SEuOoMprDqg" allowfullscreen></iframe>
-        </div>
-    <div id="quem-somos" class="full-height p-3">
-            <h2 class="text-center">Sobre o Núcleo de Contato Improvisação Serra Gaúcha:</h2>
-            <p>Surgido em Caxias do Sul neste ano, é uma iniciativa inspiradora que busca difundir e fortalecer a prática de Contato Improvisação na região...</p>
-            <img class="img-fluid" src="seu-link-de-imagem.jpg" alt="Imagem de referência">
-        </div>
-    <div id="aulas-regulares" class="full-height">
-        <!-- Conteúdo da seção -->
-    </div>
 
-    <!-- jQuery e Bootstrap e Material Design para Bootstrap JS -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="contato" class="mt-5">
+                    <h2>Contato Improvisação</h2>
+                    <div class="text-center">
+                        <div id="player"></div>
+                    </div>
+                    <p>Contato Improvisação é uma forma de dança que surgiu na década de 1970, tendo como um de seus principais precursores o coreógrafo e dançarino americano Steve Paxton. Essa prática artística explora a comunicação entre os corpos, utilizando o toque, o peso e a movimentação conjunta, de modo a promover a sensação de dançar através do tato e de estímulos sensoriais. A Contato Improvisação busca a sensibilidade, a escuta e a resposta às ações do parceiro, permitindo que os movimentos surjam num contexto em que não há líder-seguidor, mas uma escuta mútua. Dessa forma, essa modalidade de dança estimula a consciência corporal, a criatividade e a colaboração entre os praticantes, resultando em uma experiência única e imprevisível a cada encontro..</p>
+                </div>
+
+                <div id="quem-somos" class="mt-5 row">
+                    <div class="col-md-6">
+                        <h2>Quem somos</h2>
+                        <p>Surgido em Caxias do Sul wm 2022, é uma iniciativa inspiradora que busca difundir e fortalecer a prática de Contato Improvisação na região. Idealizado por Junior Alceu Grandi, praticante experiente com quase 15 anos de vivência na prática, o Núcleo é fruto de diversas oficinas realizadas em anos anteriores pelo proponente na cidade, consolidando-se como um espaço de aprendizado e troca artística. Um exemplo é 2019, em que foram ofertadas diversas aulas de JAMs ao longo do ano, em parceria com a Unidade de Dança de Caxias do Sul. O grupo conta com a presença de importantes talentos e estudiosos do corpo, como Sandra Kawer, especialista em Práticas Corporais Orientais; Renata Pontalti, com seu trabalho autoral focado na respiração; e Roberto Ribeiro, figura tradicional da cena teatral caxiense e recentemente laureado em Dança pela Universidade Estadual do Rio Grande do Sul (UERGS). Com apoio da escola de tecidos aéreos Joanas D'ar, esses artistas enriquecem o Núcleo com suas habilidades e conhecimentos diversos, promovendo o desenvolvimento e a transversalidade do Contato Improvisação na Serra Gaúcha.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/quem_somos.jpg" alt="Imagem de quem somos" class="img-fluid">
+                    </div>
+                </div>
+
+                <div id="aulas-regulares" class="mt-5">
+                    <h2>Aulas Regulares</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Dia da semana</th>
+                                <th scope="col">Horário</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sexta-feira</td>
+                                <td>20h</td>
+                                <td>R$ 149,00</td>
+                                <td>Joanas D'ar - Caxias do Sul</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.333877633598!2d-51.19266618490468!3d-29.184295682203327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea381613f7d7f%3A0x8a7cbf280fa8e3a2!2sJoanas%20d&#39;Ar%20Circo%20de%20A%C3%A9reos!5e0!3m2!1spt-BR!2sbr!4v1689539638925!5m2!1spt-BR!2sbr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="blood.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
-        $(document).ready(function() {
-            // Rolagem suave para os links da navbar e links da lista de links
-            $(".navbar a, .list-group a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
+        var player;
+      
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            videoId: 'M3Zm7sYyJDI',
+            playerVars: {
+              autoplay: 1,
+              controls: 0,
+              modestbranding: 1,
+              rel: 0,
+              playsinline: 1
+            },
+            width: 360,
+            height: 640
+          });
+        }
+      </script>
+    
+
 </body>
+
 </html>
